@@ -66,7 +66,7 @@ h1 {
 第一种
 
 $$
-mg\sin30-mgfs\cos30-m_cg\frac{s}{4}+M\frac{s}{2r}=\frac{1}{2}m_AV_A^2+\frac{1}{2}m_BV_C^2+\frac{1}{2}J_0\omega^2+\frac{1}{2}J_C\omega_C^2
+mg\sin30-mgfs\cos30-m_cg\frac{s}{4}+M\frac{s}{2r}=\frac{1}{2}m_Av_A^2+\frac{1}{2}m_Bv_C^2+\frac{1}{2}J_0\omega^2+\frac{1}{2}J_C\omega_C^2
 $$
 
 辅助方程：

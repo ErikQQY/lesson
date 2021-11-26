@@ -173,7 +173,7 @@ $$
 对鼓轮O:
 
 $$
-M+\sqrt{3}\cdot 2r-\sqrt{2}r=m\rho^2\alpha_1\quad(动量矩定理)
+M+T_32r-T_2r=m\rho^2\alpha_1\quad(动量矩定理)
 $$
 
 ---

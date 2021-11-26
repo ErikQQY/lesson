@@ -88,12 +88,10 @@ $$
 
 $$
 
-可得最后结果
-
-速度：
+对能量方程两边进行微分和再微分，可得速度和加速度：
 
 $$
-v=\sqrt(\frac{248-96\sqrt(3)f}{102+24\frac{\rho^2}{r^2}}gs)
+v=\sqrt{\frac{124r^2-48\sqrt{3}fr^2}{51r^2+12\rho^2}gs}, \ a=\frac{62r^2-24\sqrt{3}fr^2}{51r^2+12\rho^2}g
 $$
 
 ---
@@ -142,207 +140,61 @@ $$
 $$
 
 
+可得解：
+
+$$
+v=\sqrt{\frac{124r^2-48\sqrt{3}fr^2}{51r^2+12\rho^2}gs}, \ a=\frac{62r^2-24\sqrt{3}fr^2}{51r^2+12\rho^2}g
+$$
+
 ---
 class: px-20
 ---
 
-# Themes
+# 动力学：
 
-Slidev comes with powerful theming support. Themes can provide styles, layouts, components, or even configurations for tools. Switching between themes by just **one edit** in your frontmatter:
+第三种方法：
 
-<div grid="~ cols-2 gap-2" m="-t-2">
+$\alpha$关系：
 
-```yaml
----
-theme: default
----
-```
-
-```yaml
----
-theme: seriph
----
-```
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-default/01.png?raw=true">
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-seriph/01.png?raw=true">
-
-</div>
-
-Read more about [How to use a theme](https://sli.dev/themes/use.html) and
-check out the [Awesome Themes Gallery](https://sli.dev/themes/gallery.html).
-
----
-preload: false
----
-
-# Animations
-
-Animations are powered by [@vueuse/motion](https://motion.vueuse.org/).
-
-```html
-<div
-  v-motion
-  :initial="{ x: -80 }"
-  :enter="{ x: 0 }">
-  Slidev
-</div>
-```
-
-<div class="w-60 relative mt-6">
-  <div class="relative w-40 h-40">
-    <img
-      v-motion
-      :initial="{ x: 800, y: -100, scale: 1.5, rotate: -50 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-square.png"
-    />
-    <img
-      v-motion
-      :initial="{ y: 500, x: -100, scale: 2 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-circle.png"
-    />
-    <img
-      v-motion
-      :initial="{ x: 600, y: 400, scale: 2, rotate: 100 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-triangle.png"
-    />
-  </div>
-
-  <div
-    class="text-5xl absolute top-14 left-40 text-[#2B90B6] -z-1"
-    v-motion
-    :initial="{ x: -80, opacity: 0}"
-    :enter="{ x: 0, opacity: 1, transition: { delay: 2000, duration: 1000 } }">
-    Slidev
-  </div>
-</div>
-
-<!-- vue script setup scripts can be directly used in markdown, and will only affects current page -->
-<script setup lang="ts">
-const final = {
-  x: 0,
-  y: 0,
-  rotate: 0,
-  scale: 1,
-  transition: {
-    type: 'spring',
-    damping: 10,
-    stiffness: 20,
-    mass: 2
-  }
-}
-</script>
-
-<div
-  v-motion
-  :initial="{ x:35, y: 40, opacity: 0}"
-  :enter="{ y: 0, opacity: 1, transition: { delay: 3500 } }">
-
-[Learn More](https://sli.dev/guide/animations.html#motion)
-
-</div>
-
----
-
-# LaTeX
-
-LaTeX is supported out-of-box powered by [KaTeX](https://katex.org/).
-
-<br>
-
-Inline $\sqrt{3x-1}+(1+x)^2$
-
-Block
 $$
-\begin{array}{c}
-
-\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &
-= \frac{4\pi}{c}\vec{\mathbf{j}}    \nabla \cdot \vec{\mathbf{E}} & = 4 \pi \rho \\
-
-\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} & = \vec{\mathbf{0}} \\
-
-\nabla \cdot \vec{\mathbf{B}} & = 0
-
-\end{array}
+a_1=\alpha_1\cdot 2r\quad\quad\rightarrow\quad\quad \alpha_1=\frac{a_1}{2r} \\
+\alpha_1 r=2a_2 \quad\quad\rightarrow\quad\quad a_2=\frac{a_1}{4}\\
+a_2=\alpha_2r\quad\quad\rightarrow\quad\quad \alpha_2=\frac{a_1}{4r}
 $$
 
-<br>
+对滑块A：
 
-[Learn more](https://sli.dev/guide/syntax#latex)
+$$
+F_N=mg\cos30 \\
+mg\sin30-F_f-\sqrt{3}=ma_1 \\
+f_f=fF_N\quad\quad (运动学补充方程)
+$$
 
----
+对鼓轮O:
 
-# Diagrams
-
-You can create diagrams / graphs from textual descriptions, directly in your Markdown.
-
-<div class="grid grid-cols-3 gap-10 pt-4 -mb-6">
-
-```mermaid {scale: 0.5}
-sequenceDiagram
-    Alice->John: Hello John, how are you?
-    Note over Alice,John: A typical interaction
-```
-
-```mermaid {theme: 'neutral', scale: 0.8}
-graph TD
-B[Text] --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
-```
-
-```plantuml {scale: 0.7}
-@startuml
-
-package "Some Group" {
-  HTTP - [First Component]
-  [Another Component]
-}
-
-node "Other Groups" {
-  FTP - [Second Component]
-  [First Component] --> FTP
-}
-
-cloud {
-  [Example 1]
-}
-
-
-database "MySql" {
-  folder "This is my folder" {
-    [Folder 3]
-  }
-  frame "Foo" {
-    [Frame 4]
-  }
-}
-
-
-[Another Component] --> [Example 1]
-[Example 1] --> [Folder 3]
-[Folder 3] --> [Frame 4]
-
-@enduml
-```
-
-</div>
-
-[Learn More](https://sli.dev/guide/syntax.html#diagrams)
-
+$$
+M+\sqrt{3}\cdot 2r-\sqrt{2}r=m\rho^2\alpha_1\quad(动量矩定理)
+$$
 
 ---
-layout: center
-class: text-center
----
 
-# Learn More
+对滑轮和重物：
 
-[Documentations](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/showcases.html)
+$$
+T_2+T_1-\frac{1}{3}mg-\frac{1}{2}mg=(\frac{m}{3}+\frac{m}{2})a_2\quad\quad(质心运动方程)
+$$
+
+
+对滑轮C:
+
+$$
+T_2r-T_1r=\frac{m}{3}r^2\cdot dr\quad\quad (动量矩定理)
+$$
+
+$T_1$, $T_2$, $T_3$, $a_1$, $a_2$, $\alpha_1$, $\alpha_2$, $F_N$, $F_f$, 9个未知量, 9个方程
+
+可解得：
+
+$$
+v=\sqrt{\frac{124r^2-48\sqrt{3}fr^2}{51r^2+12\rho^2}gs}, \ a=\frac{62r^2-24\sqrt{3}fr^2}{51r^2+12\rho^2}g
+$$

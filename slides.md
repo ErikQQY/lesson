@@ -36,7 +36,7 @@ The last comment block of each slide will be treated as slide notes. It will be 
 
 第二个题
 
-![Problem](/problem.jpg)
+<img src="/problem.jpg" class="rounded w-160 abs-tr mt-16 mr-12"/>
 
 <br>
 <br>
@@ -166,7 +166,7 @@ $$
 
 $$
 F_N=mg\cos30 \\
-mg\sin30-F_f-\sqrt{3}=ma_1 \\
+mg\sin30-F_f-T_3=ma_1 \\
 f_f=fF_N\quad\quad (运动学补充方程)
 $$
 

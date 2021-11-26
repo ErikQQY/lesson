@@ -130,13 +130,13 @@ $$
 可解得$T_3$, $a_1$的关系：
 
 $$
-(\frac{4}{3}-\sqrt(3)f)mg-(\frac{19}{8}+\frac{\rho^2}{2r^2})\cdot ma_1+3\sqrt(3)+0
+(\frac{4}{3}-\sqrt{3}f)mg-(\frac{19}{8}+\frac{\rho^2}{2r^2})\cdot ma_1+3T_3=0
 $$
 
 再对滑轮重物(C和B)在D点列力矩平衡：
 
 $$
--(\frac{m}{3}g+\frac{m}{3}a_2+\frac{m}{2}g+\frac{m}{2}a_2)r+MI_2+T_3\cdot 2r=0
+-(\frac{m}{3}g+\frac{m}{3}a_2+\frac{m}{2}g+\frac{m}{2}a_2)r+MI_2+T_32r=0
 $$
 
 
